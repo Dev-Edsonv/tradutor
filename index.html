@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Tradutor</title>
 </head>
+
 <body>
 
-    <textarea name="" id=""></textarea>
+    <div class="divMae"> <!--DIV MÃE-->
 
-    <select name="" id="">
-        <option value="">Inglês</s></option>
-        <option value="">Alemão</option>
-        <option value="">Japonês</option>
-        <option value="">Espanhol</option>
-        <option value="">Francês</option>
-    </select>
+        <textarea name="" class="inputTexto"></textarea>
 
-    <button>Traduzir</button>
-    
+        <div class="controle">
+            <select name="" id="">
+                <option value="">Inglês</s></option>
+                <option value="">Alemão</option>
+                <option value="">Japonês</option>
+                <option value="">Espanhol</option>
+                <option value="">Francês</option>
+            </select>
+
+            <button class="traduzir">Traduzir</button>
+            <button class="microfone">Microfone</button>
+        </div>
+
+        <div class="resultado">
+            <h3 class="tituloTraducao">Tradução</h3>
+            <p class="traducao">Tradução aqui</p>
+        </div>
+
+    </div> <!--DIV MÃE-->
 </body>
+
 </html>
