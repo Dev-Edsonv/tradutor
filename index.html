@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+        
     <title>Tradutor</title>
 </head>
 
@@ -15,24 +22,29 @@
         <textarea name="" class="inputTexto"></textarea>
 
         <div class="controle">
-            <select name="" id="">
-                <option value="">Inglês</s></option>
-                <option value="">Alemão</option>
-                <option value="">Japonês</option>
-                <option value="">Espanhol</option>
-                <option value="">Francês</option>
+            <select name="" id="idioma">
+                <option value="en">Inglês</option>
+                <option value="de">Alemão</option>
+                <option value="es">Espanhol</option>
+                <option value="fr">Francês</option>
             </select>
 
-            <button class="traduzir">Traduzir</button>
-            <button class="microfone">Microfone</button>
+            <button onclick="traduzir()" class="traduzir">
+                <img src="./img/traduzir.svg" alt="">
+            </button>
+
+            <button onclick="ouvir()" class="microfone">
+                <img src="./img/microfone.svg" alt="">
+            </button>
         </div>
 
         <div class="resultado">
             <h3 class="tituloTraducao">Tradução</h3>
-            <p class="traducao">Tradução aqui</p>
+            <p class="traducao"></p>
         </div>
 
     </div> <!--DIV MÃE-->
 </body>
+<script src="./script.js"></script>
 
 </html>

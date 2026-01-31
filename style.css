@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     font-family: "Google Sans", sans-serif;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 
 .divMae {
     width: 500px;
-    height: 300px;
+    height: 350px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 20px;
@@ -32,12 +33,14 @@ body {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
+    outline: none;
 }
 
 .controle {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    margin-bottom: 45px;
 }
 
 select {
@@ -49,5 +52,56 @@ select {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
+    outline: none;
 }
 
+button {
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 40px;
+    height: 40px
+}
+.resultado {
+    margin-top: 20px;
+}
+
+.tituloTraducao {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.traducao {
+    padding-top: 20px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+
+  .divMae {
+    width: 100%;
+    max-width: 420px;
+    padding: 14px;
+  }
+
+  .controle {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  button {
+    display: none;
+  }
+}
